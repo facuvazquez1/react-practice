@@ -1,24 +1,27 @@
-// 01 - Creamos el componente "Partido"
-function Partido() {
-  return (
-    <div>
-      <p>Boca 2 - 1 River</p>
-    </div>
-  );
-}
-// 02 - Creamos el componete "App", que utiliza dentro el componente "Partido"
+import Saludo from "./components/Saludo.jsx";
+import Perfil from "./components/Perfil.jsx"
+import Avatar from "./components/Avatar.jsx"
+import Encabezado from "./components/Encabezado.jsx"; 
+import FormularioContacto from "./components/FormularioContacto.jsx";
+import FichaVideojuego from "./components/FichaVideojuego.jsx";
+
+
+
+
 function App() {
   return (
-    <main>
-      <h1>Fecha 1</h1>
-      <Partido />
-      <Partido />
-      <Partido />
-    </main>
+    <>
+      <h1>Facundo Vazquez</h1>
+      <Saludo />
+      <Perfil/>
+      <Avatar/>
+      <Encabezado/>
+      <FormularioContacto/>
+      <FichaVideojuego/>
+    </>
   );
 }
 
-// 03 - Le avisamos a main.jsx que componentes se tiene que dibujar
-// Explicacion: main.jsx hace import App from './App.jsx'. Para que ese import funcione, 
-// App.jsx tiene que exportar el componente. Partido no necesita export porque se usa dentro del mismo archivo.
 export default App;
+
+
