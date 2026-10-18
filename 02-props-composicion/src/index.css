@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(41, 30, 49);
+  margin: 5px;
+  padding: 5px;
+  color: beige;
+}
+
+.tarjeta {
+  border: 1px solid greenyellow;
+  padding: 2px;
+  text-align: center;
+  display: grid;
+}
+
+.bronce {
+  color: brown;
+}
+
+.plata {
+  color: cornflowerblue;
+}
+
+.oro {
+  color: yellow;
+}
